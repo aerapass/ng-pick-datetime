@@ -210,7 +210,7 @@ describe('OwlDateTimeComponent', () => {
                 fixture.detectChanges();
                 flush();
 
-                expect(parseInt(getComputedStyle(popup).height as string)).toBe(
+                expect(parseInt((getComputedStyle(popup).height || 0) as string)).toBe(
                     0
                 );
             }));
