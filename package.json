@@ -1,6 +1,6 @@
 {
-  "name": "ng-pick-datetime",
-  "version": "0.0.0",
+  "name": "@aerapass/ng-pick-datetime",
+  "version": "1.0.0",
   "description": "Angular Date Time Picker",
   "keywords": [
     "Angular",
@@ -19,7 +19,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build_lib": "ng build picker && cp README.md dist/picker",
-    "build_css": "mkdir -p dist/picker/assets/style && node-sass --output-style=compressed projects/picker/src/sass/picker.scss > dist/picker/assets/style/picker.min.css",
+    "build_css": "mkdir -p dist\\picker\\assets\\style && node-sass --output-style=compressed projects/picker/src/sass/picker.scss dist/picker/assets/style/picker.min.css",
     "npm_pack": "cd dist/picker && npm pack",
     "package": "npm run build_lib && npm run build_css && npm run npm_pack"
   },
@@ -62,7 +62,7 @@
     "karma-jasmine": "~2.0.1",
     "karma-jasmine-html-reporter": "^1.4.0",
     "ng-packagr": "^12.2.7",
-    "node-sass": "^4.12.0",
+    "node-sass": "^6.0.1",
     "protractor": "~7.0.0",
     "ts-node": "~8.1.0",
     "tslib": "^2.4.1",
